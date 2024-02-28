@@ -1,0 +1,171 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:layout_above="@id/bottomPanel">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/topPanel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="5">
+
+                <TextView
+                    android:id="@+id/red"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:background="@color/r"
+                    android:text=""
+                    android:textColor="#FFFFFF"
+                    android:gravity="center"
+                    android:layout_weight="1"/>
+
+                <TextView
+                    android:id="@+id/gre"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:background="@color/g"
+                    android:text=""
+                    android:textColor="#FFFFFF"
+                    android:gravity="center"
+                    android:layout_weight="1"/>
+
+                <TextView
+                    android:id="@+id/blu"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:background="@color/b"
+                    android:text=""
+                    android:textColor="#FFFFFF"
+                    android:gravity="center"
+                    android:layout_weight="1"/>
+                <TextView
+                    android:id="@+id/ylo"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:background="@color/y"
+                    android:text=""
+                    android:textColor="#FFFFFF"
+                    android:gravity="center"
+                    android:layout_weight="1"/>
+                <TextView
+                    android:id="@+id/pur"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:background="@color/p"
+                    android:text=""
+                    android:textColor="#FFFFFF"
+                    android:gravity="center"
+                    android:layout_weight="1"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/middlePanel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="5">
+
+                <TextView
+                    android:id="@+id/aqu"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:background="@color/a"
+                    android:text=""
+                    android:textColor="#FFFFFF"
+                    android:gravity="center"
+                    android:layout_weight="1"/>
+                <TextView
+                    android:id="@+id/ora"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:background="@color/o"
+                    android:text=""
+                    android:textColor="#FFFFFF"
+                    android:gravity="center"
+                    android:layout_weight="1"/>
+                <TextView
+                    android:id="@+id/pin"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:background="@color/pin"
+                    android:text=""
+                    android:textColor="#FFFFFF"
+                    android:gravity="center"
+                    android:layout_weight="1"/>
+                <TextView
+                    android:id="@+id/gra"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:background="@color/gr"
+                    android:text=""
+                    android:textColor="#FFFFFF"
+                    android:gravity="center"
+                    android:layout_weight="1"/>
+                <TextView
+                    android:id="@+id/dblu"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:background="@color/dblu"
+                    android:text=""
+                    android:textColor="#FFFFFF"
+                    android:gravity="center"
+                    android:layout_weight="1"/>
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/turnsLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="50dp"
+                android:layout_marginBottom="50dp"
+                android:text="00/25"
+                android:textSize="18sp" />
+
+            <com.example.mygamefloodit.GameBoardView
+                android:id="@+id/gameBoard"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:paddingTop="50dp"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout
+        android:id="@+id/bottomPanel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="40dp"
+        android:layout_alignParentBottom="true"
+        android:weightSum="2">
+        <Button
+            android:id="@+id/button_restart"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/bl"
+            android:text="Рестарт"/>
+        <Button
+            android:id="@+id/buttonpause"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/bl"
+            android:text="Пауза"/>
+    </LinearLayout>
+</RelativeLayout>

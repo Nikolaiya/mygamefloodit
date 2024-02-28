@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginTop="250dp"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/edit_num_colors"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:hint="Количество цветов" />
+
+    <EditText
+        android:id="@+id/edit_max_turns"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:hint="Максимальное \nчисло ходов" />
+
+    <EditText
+        android:id="@+id/edit_board_size"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:hint="Размер доски" />
+
+</LinearLayout>
